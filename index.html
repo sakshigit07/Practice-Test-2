@@ -3,35 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Food Experience</title>
+    <title>Healthy Bakery | Organic & Vegan</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <canvas class="webgl"></canvas>
 
-    <nav>
-        <div class="logo">GOURMET.3D</div>
+    <nav class="navbar">
+        <div class="logo">BAKERY</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <button class="btn-primary">Order Now</button>
     </nav>
 
-    <section class="section one">
-        <h1>THE FRESH<br>REVOLUTION</h1>
-    </section>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Freshly Baked, <br> Just for You!</h1>
+            <p>Delicious organic and vegan treats made with love every single day.</p>
+            <button class="btn-hero">Order Now</button>
+        </div>
+        <div class="hero-image-container">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&q=80&w=1000" alt="Croissants" class="floating">
+        </div>
+    </header>
 
-    <section class="section two">
-        <div class="content-right">
-            <h2>Organic Ingredients</h2>
-            <p>Hand-picked, 3D-scanned perfection.</p>
+    <section class="features">
+        <div class="section-title">
+            <h2>Why Choose Us?</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="feature-grid">
+            <div class="card reveal">
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=400" alt="Bread">
+                <h3>Artisan Breads</h3>
+                <p>Hand-kneaded with organic flour and natural yeast.</p>
+                <button class="btn-outline">View Details</button>
+            </div>
+            <div class="card reveal">
+                <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&q=80&w=400" alt="Pastries">
+                <h3>Sweet Pastries</h3>
+                <p>Vegan-friendly pastries that melt in your mouth.</p>
+                <button class="btn-outline">View Details</button>
+            </div>
+            <div class="card reveal">
+                <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&q=80&w=400" alt="Cakes">
+                <h3>Custom Cakes</h3>
+                <p>Perfect for birthdays, weddings, and celebrations.</p>
+                <button class="btn-outline">View Details</button>
+            </div>
         </div>
     </section>
 
-    <section class="section three">
-        <h1>UNMATCHED<br>DETAIL</h1>
-    </section>
+  <section class="visit-us-centered reveal">
+    <div class="visit-container">
+        <div class="visit-content">
+            <h2>Visit Us Today</h2>
+            <div class="underline-center"></div>
+            <p>Experience the aroma of fresh baking at our cozy local shop. We use only the finest organic ingredients to bring you the taste of home.</p>
+            <button class="btn-hero">Find Our Location</button>
+        </div>
+        
+        <div class="visit-gallery-grid">
+            <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&q=80&w=600" alt="Cookies">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=600" alt="Bakery Interior">
+        </div>
+    </div>
+</section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r128/examples/js/loaders/GLTFLoader.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
